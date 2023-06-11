@@ -5,5 +5,7 @@ Android 可执行文件绘制
 /dev/input 获取触摸坐标
 全机型防录屏,截屏,黑屏
 Vulkan或Opengl随意切换
-
+使用
+将 libDrawCore.so和main.jar push到/data/local/tmp
+执行命令 app_process64 -Djava.class.path=/data/local/tmp/main.jar /system/bin com.example.draw.Main
 TODO:安卓10以下貌似需要反射才能支持?
